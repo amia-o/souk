@@ -1,0 +1,62 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+
+body {
+	background-color: black;
+	margin: 0px;
+}
+
+#item-details{
+
+	border: 1px gray;
+	display: inline-block;
+
+}
+
+.dropdown{
+	display: inline-block;
+}
+
+#category-drop{
+	display: inline-block;
+
+}
+
+#condition-drop{
+	display: inline-block;
+
+}
+
+.title{
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+	font-style: "roboto";
+	font-size: 15pt;
+	font-weight: 300;
+}
+
+.form-inline{
+	display: inline-block;
+}
+
+.container{
+	margin:0px;
+	box-shadow: 2px 4px 5px #CBCBCB;
+
+}
+
+.item-pic{
+	display: inline-block;
+}
+
+#content{
+	margin-left: 15%;
+	margin-right: 15%;
+	border: 3px black;
+	border-radius: 5px;
+	padding: 30px;
+	background-color: #ffffff;
+}

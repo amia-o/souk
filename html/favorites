@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>Souk</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <link rel="stylesheet" href="souk.css" type="text/css" /> 
+    <link rel="stylesheet" href="home.css" type="text/css" /> 
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+ 	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>	
+
+<!-- search -->
+	<a href="#"><img id="search" src="img/icons/search.png" alt="search" height="30" width="30"></a>
+<!-- nav icons and log out -->	
+	<div id="icons-top">
+
+		<p id="logout"><a href="#">log out</a></p>
+
+		<a href="#"><img class="nav-icons" src="img/icons/message.png" alt="message" height="30" width="30"></a>
+		<a href="#"><img class="nav-icons" src="img/icons/thumbs28.png" alt="favorites" height="30" width="30"></a>
+		<a href="#"><img class="nav-icons" src="img/icons/add-souk.png" alt="add-new" height="30" width="30"></a>
+		<a href="#"><img class="nav-icons" src="img/icons/profile.png" alt="profile" height="30" width="30"></a>
+
+	</div>
+
+	<!-- red top bar -->
+	<div id="red-top">
+	<!-- logo -->	
+		<div id="logo"><a href="#"><img id="logo" src="img/logo.png" alt="logo"></a></div>
+
+	<!-- top nav elements -->			
+			<div id="top-nav">
+				<h3 class="nav"><a class="textresize" href="#">apparel</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">household</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">technology</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">textbooks</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">other</a></li>
+			</div>
+	</div>
+
+
+	<!-- items-->	
+	<div id="content">	
+		<div class="row">
+			<div id="item" class="col-md-4" ng-controller="StoreController as store">
+				<a href="#"><img class="clothes" src="img/couch.jpg" alt="couch" height="250" width="230"></a>
+				<h3 class="item-name">{{store.product.name}}</h3>
+				<p class="price">${{store.product.price}}</p>
+				<p class="distance">{{store.product.distance}}</p>
+			</div>	
+
+		    <script type="text/javascript" src="angular.min.js"></script>
+	 		<script type="text/javascript" src="app.js"></script>
+
+			<div id="item" class="col-md-4">
+			<a href="#"><img class="clothes" src="img/couch.jpg" alt="couch" height="250" width="230"></a>
+			<h3 class="item-name"> Leather Love Seat </h3>
+			<p class="price">$50</p>
+			<p class="distance">.25 miles away</p>
+			</div>	
+
+			<img class="fav" src="img/thumbs-white.png" alt="thumbs" height="250" width="230"></a>
+
+			<div id="item" class="col-md-4">
+			<a href="#"><img class="clothes" src="img/couch.jpg" alt="couch" height="250" width="230"></a>
+			<h3 class="item-name"> Leather Love Seat </h3>
+			<p class="price">$50</p>
+			<p class="distance">.25 miles away</p>
+			</div>	
+		</div>
+		<div class="row">
+			<div id="item" class="col-md-4" ng-controller="StoreController as store">
+				<a href="#"><img class="clothes" src="img/couch.jpg" alt="couch" height="250" width="230"></a>
+				<h3 class="item-name">{{store.product.name}}</h3>
+				<p class="price">${{store.product.price}}</p>
+				<p class="distance">{{store.product.distance}}</p>
+			</div>	
+
+		    <script type="text/javascript" src="angular.min.js"></script>
+	 		<script type="text/javascript" src="app.js"></script>
+
+			<div id="item" class="col-md-4">
+			<a href="#"><img class="clothes" src="img/couch.jpg" alt="couch" height="250" width="230"></a>
+			<h3 class="item-name"> Leather Love Seat </h3>
+			<p class="price">$50</p>
+			<p class="distance">.25 miles away</p>
+			</div>	
+
+			<div id="item" class="col-md-4">
+			<a href="#"><img class="clothes" src="img/couch.jpg" alt="couch" height="250" width="230"></a>
+			<h3 class="item-name"> Leather Love Seat </h3>
+			<p class="price">$50</p>
+			<p class="distance">.25 miles away</p>
+			</div>	
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript" src="app.js"></script>

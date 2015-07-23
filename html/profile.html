@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <title>Souk</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <link rel="stylesheet" href="souk.css" type="text/css" /> 
+    <link rel="stylesheet" href="profile.css" type="text/css" /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+ 	<script type="text/javascript" src="app.js"></script>
+	</head>
+<body>	
+
+<!-- search -->
+	<a href="#"><img id="search" src="img/icons/search.png" alt="search" height="30" width="30"></a>
+<!-- nav icons and log out -->	
+	<div id="icons-top">
+
+		<p id="logout"><a href="#">log out</a></p>
+
+		<a href="#"><img class="nav-icons" src="img/icons/message.png" alt="message" height="30" width="30"></a>
+		<a href="favorites.html"><img class="nav-icons" src="img/icons/thumbs28.png" alt="favorites" height="30" width="30"></a>
+		<a href="create-new.html"><img class="nav-icons" src="img/icons/add-souk.png" alt="add-new" height="30" width="30"></a>
+		<a href="profile.html"><img class="nav-icons" src="img/icons/profile.png" alt="profile" height="30" width="30"></a>
+
+	</div>
+
+	<!-- red top bar -->
+	<div id="red-top">
+	<!-- logo -->	
+		<div id="logo"><a href="index.html"><img id="logo" src="img/logo.png" alt="logo" width="200px" height="auto"></a></div>
+
+	<!-- top nav elements -->			
+			<div id="top-nav">
+				<h3 class="nav"><a class="textresize" href="#">apparel</a></h3>
+				<h3 class="nav"><a class="textresize" href="household.html">household</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">technology</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">textbooks</a></h3>
+				<h3 class="nav"><a class="textresize" href="#">other</a></li>
+			</div>
+	</div>
+
+	<div id="grey-rect"></div>
+
+	<div class="container">
+	<div id="content" class="col-md-8">
+	<img id="profile-pic" src="http://cdn01.maxviral.com/wp-content/uploads/2015/04/man-67467_640.jpg?0139f6" alt="profile-pic" height="200" width="auto">
+
+	<div id="profile-info">
+		<h1> Hello, Daniel Thompson! </h1>
+		<ul>
+			<li><strong>Phone:</strong> (401)-827-0398</li>
+			<li><strong>Alt. Email:</strong> danielthompson@gmail.com</li>
+			<li><strong>Location:</strong> Barbour Hall</li>
+			<li><strong>Notify Via:</strong> <div class="btn-group" role="group" aria-label="...">
+							  <button type="button" class="btn btn-default">Phone</button>
+							  <button type="button" class="btn btn-default">Email</button>
+							  <button type="button" class="btn btn-default">Alt. Email</button>
+							</div>
+	</div>
+
+	<button id="edit-but" type="button" class="btn btn-default">Edit</button>
+	</div>
+
+	<h2 id="current-sales">Current Sales</h2>
+
+	<div id="item" class="col-lg-3" ng-controller="StoreController as store">
+				<a href="#"><img class="subcat-img" src="img/couch.jpg" alt="couch" height="260" width="230"></a>
+				<h3 class="item-name"> {{store.product.name}}</h3>
+				<p class="price">${{store.product.price}}</p>
+				<button type="button" class="btn btn-default" id="sold">Sold?</button>
+			</div>	
+
+		    <script type="text/javascript" src="angular.min.js"></script>
+	 		<script type="text/javascript" src="app.js"></script>
+
+
+
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript" src="app.js"></script>

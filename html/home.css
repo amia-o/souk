@@ -1,0 +1,46 @@
+/* ---------------------content--------------------- */
+#content{
+	margin: 0px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---------------------item--------------------- */
+#item{
+	display: inline-block;
+	margin-right: 50px;
+	margin-left:50px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 2px 4px 5px #CBCBCB;
+	width: 255px;
+	margin-bottom: 50px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.item-name{
+	font-family: roboto;
+	font-weight: lighter;
+	font-size: 15pt;
+	color: #4A4A4A;
+	margin: 0px;
+}
+
+.price{
+	color:#FF4446;
+	font-family: roboto;
+	font-weight: regular;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+.distance{
+	color:#4A4A4A;
+	font-family: roboto;
+	font-weight: lighter;
+	font-style: italic;
+	margin: 0px;
+	font-size: 10pt;
+}
